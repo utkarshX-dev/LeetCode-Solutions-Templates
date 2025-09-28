@@ -1,4 +1,4 @@
-# 🚀 LeetCode Solutions & Templates
+# LeetCode Solutions & Templates
 ## ⚡ Quick Start
 
 ```bash
