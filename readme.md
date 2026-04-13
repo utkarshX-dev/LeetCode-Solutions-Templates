@@ -1,6 +1,13 @@
 # LeetCode Solutions & Templates
 ## ⚡ Quick Start
 
+```To run
+In bash Terminal
+g++ filename.cpp -o run.exe
+./run.exe 
+
+```
+
 ```bash
 git clone https://github.com/utkarshX-dev/LeetCode-Solutions-Templates.git
 cd LeetCode-Solutions-Templates
