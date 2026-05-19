@@ -80,7 +80,7 @@ void diffArrayMultiplication(vector<int>& nums, vector<vector<int>>& queries){
 
         // reverse effect after r
         if(r + 1 < n){
-            diff[r + 1] /= val;  // ⚠️ must divide cleanly
+        diff[r + 1] /= val;  // ⚠️ must divide cleanly
         }
     }
 

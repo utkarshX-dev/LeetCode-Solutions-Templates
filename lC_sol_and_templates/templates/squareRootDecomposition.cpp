@@ -1,3 +1,7 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
 class NumArray {
 public:
     vector<int> nums, blocks;
@@ -55,3 +59,8 @@ public:
  * obj->update(index,val);
  * int param_2 = obj->sumRange(left,right);
  */
+
+int main() {
+    
+    return 0;
+}
