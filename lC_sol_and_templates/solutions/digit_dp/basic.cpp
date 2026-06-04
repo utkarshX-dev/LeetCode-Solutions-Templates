@@ -1,3 +1,20 @@
+// Your task is to count the number of integers between a and b where no two adjacent digits are the same.
+
+//Input
+// The only input line has two integers a and b.
+// Output
+// Print one integer: the answer to the problem.
+// Constraints
+
+// 0 <= b <= 10  ^ 18
+
+// Example
+// Input:
+// 123 321
+
+// Output:
+// 171
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -31,10 +48,10 @@ ll gcd(ll a, ll b) {
 ll dp[2][11][20][2];
 
 ll df_func(string& s, ll tight, ll prev, ll idx, bool lz){
-    if(idx == s.size()) return 1;
+    if(idx == s.length()) return 1;
     if(dp[tight][prev][idx][lz] != -1) return dp[tight][prev][idx][lz];
     int lb = 0, ub = tight ? s[idx] - '0' : 9;
-    ll res = 0;
+    int res = 0;
     for(int i = lb; i <= ub; i++){
         if(i == prev && !lz) continue;
         res += df_func(s, (tight && i == ub), i, idx + 1, (lz && i == 0));
@@ -43,7 +60,7 @@ ll df_func(string& s, ll tight, ll prev, ll idx, bool lz){
 }
 
 void solve() {
-    ll a, b;
+    int a, b;
     cin >> a >> b;
     ll res = 0;
     string r = to_string(b);

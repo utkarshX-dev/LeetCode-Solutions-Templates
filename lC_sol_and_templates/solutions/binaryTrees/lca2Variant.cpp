@@ -1,3 +1,6 @@
+// P and q may or may not be present in the tree
+// if both present find lca else return NULL
+ 
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
